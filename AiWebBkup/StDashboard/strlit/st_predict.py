@@ -1,7 +1,7 @@
 """
 Streamlit app for AI Predict
 """
-import time
+#import time
 from pathlib import Path
 
 import pandas as pd
@@ -19,7 +19,7 @@ def load_ai_pickle(pkl):
 
 
 
-begin = time.time()
+begin = time()
 
 BASE_DIR = Path.cwd()
 CSV_FILE = BASE_DIR / 'DATA' / 'titanic_train.csv'
@@ -80,3 +80,5 @@ else:
 
 elapsed = time.time() - begin
 st.info(f"{elapsed = :.1f} secs")
+import time
+print(time.__version__)
