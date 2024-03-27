@@ -19,7 +19,7 @@ def load_ai_pickle(pkl):
 
 
 
-begin = time()
+#begin = time.time()
 
 BASE_DIR = Path.cwd()
 CSV_FILE = BASE_DIR / 'DATA' / 'titanic_train.csv'
@@ -78,7 +78,5 @@ else:
     st.error("예측 결과 **:blue[사망]** 입니다.")
 "---"
 
-elapsed = time.time() - begin
-st.info(f"{elapsed = :.1f} secs")
-import time
-print(time.__version__)
+#elapsed = time.time() - begin
+#st.info(f"{elapsed = :.1f} secs")

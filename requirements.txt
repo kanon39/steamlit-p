@@ -1,4 +1,3 @@
-python
 pathlib
 pandas
 streamlit
