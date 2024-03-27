@@ -2,15 +2,22 @@
 Streamlit app for AI Predict
 """
 import time
-import sys, os
 from pathlib import Path
 
 import pandas as pd
 import streamlit as st
+import joblib
 
-
-from cache import load_titanic_data, load_ai_pickle
+from cache import load_titanic_data
 from common import ai_predict
+
+@st.cache_data
+def load_ai_pickle(pkl):
+    import joblib
+    dct = joblib.load(pkl)
+    return dct
+
+
 
 begin = time.time()
 
