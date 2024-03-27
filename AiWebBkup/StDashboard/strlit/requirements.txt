@@ -1,4 +1,0 @@
-pathlib
-pandas
-streamlit
-joblib
